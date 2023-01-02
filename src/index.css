@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(216, 222, 234), rgb(35, 65, 165));
+}
+
+.clock {
+  height: 800px;
+  width: 400px;
+  background: #e2ebf4;
+  border-radius: 32px;
+  padding: 40px;
+  display: flex;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background-color: rgba(247, 248, 250, 0.37);
+  flex-direction: column;
+}
+
+.clock .heading-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heading-bar span {
+  color: rgb(59, 68, 95);
+}
+.timer-container {
+  height: 380px;
+  width: auto;
+  border-radius: 50%;
+  background: #e6ecf5;
+  box-shadow: 18px 18px 31px rgb(212, 217, 225, 0.5),
+    -18px -18px 31px rgba(248, 255, 255, 0.663);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background-color: rgba(189, 195, 206, 0.37);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-container .stripes {
+  border: 3px dashed rgb(59, 68, 95);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-container .timer {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: monospace;
+  color: rgb(59, 68, 95);
+  display: flex;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container .button {
+  height: 70px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6ecf5;
+  box-shadow: 7px 7px 13px rgba(219, 224, 233, 0.9),
+    -7px -7px 13px rgba(242, 248, 255, 0.9);
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgb(71, 76, 91);
+  cursor: pointer;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background-color: rgba(154, 167, 192, 0.37);
+  margin-bottom: 20px;
+}
